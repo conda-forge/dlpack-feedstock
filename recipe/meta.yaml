@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/dmlc/{{ name }}/archive/v{{ version }}.tar.gz
+  git_url: https://github.com/dmlc/dlpack.git
   git_rev: 3ec04430e89a6834e5a1b99471f415fa939bf642
 
 build:
