@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'DLPack - Open In Memory Tensor Structure'
+  summary: DLPack - Open In Memory Tensor Structure
   description: |
     DLPack is an open in-memory tensor structure to for sharing tensor among frameworks
   dev_url: https://github.com/dmlc/dlpack
