@@ -1,13 +1,13 @@
 {% set name = "dlpack" %}
-{% set version = "0.3dev" %}
+{% set version = "0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/dmlc/dlpack.git
-  git_rev: 3ec04430e89a6834e5a1b99471f415fa939bf642
+  url: https://github.com/dmlc/dlpack/archive/v{{ version }}.tar.gz
+  sha256: 61ccdf7242f544c713aca31638a81420c362f0d70c39bec69b0c045025784297
 
 build:
   number: 0
