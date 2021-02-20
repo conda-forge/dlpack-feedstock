@@ -1,5 +1,5 @@
 {% set name = "dlpack" %}
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/dmlc/dlpack/archive/v{{ version }}.tar.gz
-  sha256: 61ccdf7242f544c713aca31638a81420c362f0d70c39bec69b0c045025784297
+  sha256: d0a533189ecd45a033b72e276fccaa2122cfd76de125e0a5e126bdea0fec2d24
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'DLPack - Open In Memory Tensor Structure'
+  summary: DLPack - Open In Memory Tensor Structure
   description: |
     DLPack is an open in-memory tensor structure to for sharing tensor among frameworks
   dev_url: https://github.com/dmlc/dlpack
