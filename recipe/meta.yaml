@@ -1,5 +1,5 @@
 {% set name = "dlpack" %}
-{% set version = "0.6" %}
+{% set version = "0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dmlc/dlpack/archive/v{{ version }}.tar.gz
-  sha256: ce7715108623c011aa1e01afb32e218ddbdf66492494d7e718a78ac41010b77a
+  sha256: 13f60672b324d081545f423d720737121c4952a9b90bdd49dc372a84c3fe96ee
 
 build:
   number: 0
