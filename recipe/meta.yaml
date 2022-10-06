@@ -1,8 +1,7 @@
-{% set name = "dlpack" %}
 {% set version = "0.7" %}
 
 package:
-  name: {{ name|lower }}
+  name: dlpack
   version: {{ version }}
 
 source:
@@ -18,13 +17,12 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - make
+    - ninja-base
 
 test:
   commands:
-    - test -d ${PREFIX}/include/dlpack  # [unix]
     - test -f ${PREFIX}/include/dlpack/dlpack.h  # [unix]
-    - test -f ${PREFIX}/bin/mock  # [unix]
+    - test -f ${PREFIX}/bin/mock                 # [unix]
 
 about:
   home: https://github.com/dmlc/dlpack
