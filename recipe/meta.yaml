@@ -10,7 +10,7 @@ source:
   sha256: cf965c26a5430ba4cc53d61963f288edddcd77443aa4c85ce722aaf1e2f29513
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -24,7 +24,7 @@ test:
   commands:
     - test -d ${PREFIX}/include/dlpack  # [unix]
     - test -f ${PREFIX}/include/dlpack/dlpack.h  # [unix]
-    - test -f ${PREFIX}/bin/mock  # [unix]
+    - test -d ${PREFIX}/lib/cmake/dlpack  # [unix]
 
 about:
   home: https://github.com/dmlc/dlpack
