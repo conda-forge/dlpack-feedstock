@@ -1,11 +1,11 @@
-About dlpack
-============
+About dlpack-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dlpack-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dmlc/dlpack
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dlpack-feedstock/blob/main/LICENSE.txt)
 
 Summary: DLPack - Open In Memory Tensor Structure
 
