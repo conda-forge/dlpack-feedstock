@@ -10,21 +10,23 @@ source:
   sha256: cf965c26a5430ba4cc53d61963f288edddcd77443aa4c85ce722aaf1e2f29513
 
 build:
-  number: 2
-  skip: true  # [win]
+  number: 3
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - make
+    - ninja
 
 test:
   commands:
     - test -d ${PREFIX}/include/dlpack  # [unix]
     - test -f ${PREFIX}/include/dlpack/dlpack.h  # [unix]
     - test -d ${PREFIX}/lib/cmake/dlpack  # [unix]
+    - if not exist %LIBRARY_INC%/dlpack exit 1  # [win]
+    - if not exist %LIBRARY_INC%/dlpack/dlpack.h exit 1  # [win]
+    - if not exist %LIBRARY_LIB%/cmake/dlpack exit 1  # [win]
 
 about:
   home: https://github.com/dmlc/dlpack
