@@ -1,3 +1,6 @@
+set "LIBRARY_LIB=%LIBRARY_LIB:\=/%"
+set "LIBRARY_INC=%LIBRARY_INC:\=/%"
+
 cmake %CMAKE_ARGS% ^
   -G Ninja ^
   -DCMAKE_BUILD_TYPE=Release ^
